@@ -30,7 +30,7 @@ function Slide({ n }: { n: number }) {
   if (n === 1) return <section className="slide slide-philosophy">
     <div className="photo-memory" aria-hidden="true"><div className="window" /><div className="portrait" /><div className="table" /></div>
     <div className="philosophy-copy">
-      <span className="kicker">The Next Question</span>
+      <span className="kicker">Linger</span>
       <h2>AI doesn’t create<br />conversations.</h2>
       <p>It catches conversations<br /><em>that almost happened.</em></p>
       <div className="tiny-rule" />
@@ -44,9 +44,9 @@ function Slide({ n }: { n: number }) {
     <div className="conversation">
       <div className="speaker-label">GRANDMA</div>
       <blockquote>“The rain today reminds me of<br />the day I left home.”</blockquote>
-      <div className="ai-question"><span>THE NEXT QUESTION</span><p>Who was with you?</p></div>
+      <div className="ai-question"><span>LINGER</span><p>Who was with you?</p></div>
       <div className="reply"><span>GRANDMA</span><p>My younger brother Ming.</p></div>
-      <div className="ai-question second"><span>THE NEXT QUESTION</span><p>How old were you then?</p></div>
+      <div className="ai-question second"><span>LINGER</span><p>How old were you then?</p></div>
     </div>
     <div className="memory-saved"><span>✓</span><div><b>Memory saved</b><small>Voice preserved · Family archive updated</small></div></div>
     <Waveform />
@@ -80,7 +80,7 @@ function Slide({ n }: { n: number }) {
   return <section className="slide slide-legacy">
     <div className="legacy-top"><span className="kicker">For the generations after us</span><p>Catch the memory before it disappears.</p><p>Build a history the family can keep.</p></div>
     <div className="legacy-center"><Waveform light /><h2>One day, your grandchildren<br />won’t just read your story.</h2><strong>They’ll hear it.</strong></div>
-    <div className="brand"><span className="brand-mark">Q</span><div><b>The Next Question</b><small>A living archive, told in your voice.</small></div></div>
+    <div className="brand"><span className="brand-mark">L</span><div><b>Linger</b><small>Some voices should linger.</small></div></div>
     <span className="folio">06</span>
   </section>;
 }
@@ -105,7 +105,7 @@ export default function Home() {
   }, [go, page]);
 
   return <main className="book-stage">
-    <div className="topbar"><div className="mini-brand"><span>Q</span> The Next Question</div><button onClick={() => setNotesOpen(v => !v)} aria-pressed={notesOpen}>Presenter notes <kbd>N</kbd></button></div>
+    <div className="topbar"><div className="mini-brand"><span>L</span> Linger</div><button onClick={() => setNotesOpen(v => !v)} aria-pressed={notesOpen}>Presenter notes <kbd>N</kbd></button></div>
     <button className="edge edge-left" onClick={() => go(page - 1)} disabled={page === 0} aria-label="Previous page">‹</button>
     <div className="book-shell" onClick={(e) => { const x = e.clientX / window.innerWidth; go(page + (x > .5 ? 1 : -1)); }}>
       <div key={page} className={`page ${direction}`}><Slide n={page} /></div>
