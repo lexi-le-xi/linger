@@ -56,6 +56,7 @@ function Slide({ n }: { n: number }) {
   if (n === 3) return <section className="slide slide-archive">
     <div className="archive-title"><span className="kicker">A living family archive</span><h2>One voice.<br />A history that grows.</h2><p>Every conversation remembers the people, places, and stories between them.</p></div>
     <div className="archive-canvas">
+      <div className="archive-status"><span>VOICE</span><i /> <span>MEMORY</span><i /> <span>FAMILY HISTORY</span></div>
       <div className="year">1968<span>LEFT HOME BY TRAIN</span></div>
       <div className="tree-line l1" /><div className="tree-line l2" />
       <div className="person grandma"><b>Mei</b><small>Grandmother</small></div>
