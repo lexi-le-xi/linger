@@ -31,7 +31,7 @@ function Slide({ n }: { n: number }) {
     <div className="photo-memory" aria-hidden="true"><div className="window" /><div className="portrait" /><div className="table" /></div>
     <div className="philosophy-copy">
       <span className="kicker">Linger</span>
-      <h2>AI doesn’t create<br />conversations.</h2>
+      <h2>Linger doesn’t just create<br />conversations.</h2>
       <p>It catches conversations<br /><em>that almost happened.</em></p>
       <div className="tiny-rule" />
       <small>Notice the memory. Ask one more question.</small>
