@@ -28,7 +28,7 @@ function Slide({ n }: { n: number }) {
   </section>;
 
   if (n === 1) return <section className="slide slide-philosophy">
-    <div className="photo-memory" aria-hidden="true"><div className="window" /><div className="portrait" /><div className="table" /></div>
+    <div className="photo-memory"><img src="./elder-by-bed.png" alt="An older woman standing beside her bed, seen in profile by a rain-streaked window" /></div>
     <div className="philosophy-copy">
       <span className="kicker">Linger</span>
       <h2>Linger doesn’t just create<br />conversations.</h2>
